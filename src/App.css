@@ -149,24 +149,59 @@ h1, h2, h3 {
 }
 .project-card {
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  padding: 1.5rem 1.2rem;
-  width: 320px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  padding: 1.8rem 1.5rem;
+  width: 380px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  transition: transform 0.18s, box-shadow 0.18s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #f0f0f0;
 }
 .project-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 16px rgba(0,191,174,0.13);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0,191,174,0.15);
+}
+.project-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.project-icon {
+  font-size: 1.5rem;
+  color: #00bfae;
+  background: #e6f7f5;
+  padding: 0.5rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .project-card-title {
   color: #00bfae;
   font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  margin: 0;
+  flex: 1;
+}
+.project-metrics {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+.metric-badge {
+  background: linear-gradient(135deg, #00bfae, #009e8e);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
 }
 .project-card-desc {
   font-size: 1.05rem;
@@ -194,19 +229,71 @@ h1, h2, h3 {
   font-size: 0.95rem;
   margin-left: 0.2rem;
 }
-.github-link {
+.project-features {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #00bfae;
+}
+.feature-item {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+  line-height: 1.4;
+}
+.feature-item:last-child {
+  margin-bottom: 0;
+}
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+}
+.github-link, .demo-link {
   color: #222;
   font-weight: 500;
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  transition: color 0.18s, text-decoration 0.18s, transform 0.18s;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+.github-link {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+}
+.demo-link {
+  background: #00bfae;
+  color: white;
+  border: 1px solid #00bfae;
 }
 .github-link:hover {
+  background: #e9ecef;
   color: #00bfae;
-  text-decoration: underline;
-  transform: scale(1.03);
+  transform: translateY(-2px);
+}
+.demo-link:hover {
+  background: #009e8e;
+  border-color: #009e8e;
+  transform: translateY(-2px);
+}
+.demo-link.disabled {
+  background: #ccc;
+  color: #666;
+  border-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.demo-link.disabled:hover {
+  background: #ccc;
+  border-color: #ccc;
+  transform: none;
 }
 
 /* Resume Download Button */

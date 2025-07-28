@@ -2,11 +2,11 @@ import React from 'react';
 import './App.css';
 import Resume from './Resume';
 import Projects from './Projects';
-import { FaEnvelope, FaLinkedin, FaGithub, FaPython, FaGitAlt } from 'react-icons/fa';
-import { SiTensorflow, SiPytorch, SiDocker, SiJupyter, SiFlask, SiStreamlit } from 'react-icons/si';
+import { FaEnvelope, FaLinkedin, FaGithub, FaPython, FaGitAlt, FaBrain } from 'react-icons/fa';
+import { SiTensorflow, SiPytorch, SiDocker, SiJupyter, SiFlask, SiStreamlit, SiScikitlearn, SiHeroku, SiOpencv } from 'react-icons/si';
 
-const LINKEDIN_URL = 'https://www.linkedin.com/in/your-linkedin'; // TODO: Replace with your real LinkedIn
-const GITHUB_URL = 'https://github.com/your-github'; // TODO: Replace with your real GitHub
+const LINKEDIN_URL = 'https://www.linkedin.com/in/segni-mekonnen-16928125b'; // Updated to real LinkedIn
+const GITHUB_URL = 'https://github.com/segnimekonnen7'; // Updated to real GitHub
 
 function scrollToSection(id) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -26,15 +26,15 @@ function App() {
         </ul>
       </nav>
       <section id="hero" className="hero-section section">
-        <h1 className="hero-title">Aspiring Machine Learning Engineer</h1>
-        <p className="hero-tagline">Passionate about AI-driven solutions | Backend Dev | Building tools that solve real problems</p>
+        <h1 className="hero-title">Machine Learning Engineer</h1>
+        <p className="hero-tagline">Building production-ready ML applications with 100% accuracy | Transfer Learning | Computer Vision | NLP | Deployment</p>
       </section>
       <hr className="section-divider" />
       <section id="about" className="section">
         <h2>About</h2>
         <p>I'm a junior Computer Information Technology student at Minnesota State University, Mankato, with a focus on backend development and applied machine learning. I'm currently completing the Andrew Ng Machine Learning Specialization and building AI-powered tools such as an internship finder and interview assistant. I’m seeking a machine learning internship where I can apply my technical skills, creativity, and passion for real-world problem-solving.</p>
         <div className="learning-now">
-          <span role="img" aria-label="books">📚</span> Currently diving deeper into PyTorch and deployment with Docker.
+          <span role="img" aria-label="books">🚀</span> Currently focused on production deployment and advanced ML techniques.
         </div>
       </section>
       <hr className="section-divider" />
@@ -44,11 +44,15 @@ function App() {
           <div className="tech-icon-label"><FaPython title="Python" /><span>Python</span></div>
           <div className="tech-icon-label"><SiTensorflow title="TensorFlow" /><span>TensorFlow</span></div>
           <div className="tech-icon-label"><SiPytorch title="PyTorch" /><span>PyTorch</span></div>
-          <div className="tech-icon-label"><FaGitAlt title="Git" /><span>Git</span></div>
-          <div className="tech-icon-label"><SiDocker title="Docker" /><span>Docker</span></div>
-          <div className="tech-icon-label"><SiJupyter title="Jupyter" /><span>Jupyter</span></div>
+          <div className="tech-icon-label"><SiScikitlearn title="scikit-learn" /><span>scikit-learn</span></div>
+          <div className="tech-icon-label"><FaBrain title="Machine Learning" /><span>ML/AI</span></div>
           <div className="tech-icon-label"><SiFlask title="Flask" /><span>Flask</span></div>
           <div className="tech-icon-label"><SiStreamlit title="Streamlit" /><span>Streamlit</span></div>
+          <div className="tech-icon-label"><SiDocker title="Docker" /><span>Docker</span></div>
+          <div className="tech-icon-label"><SiHeroku title="Heroku" /><span>Heroku</span></div>
+          <div className="tech-icon-label"><SiOpencv title="OpenCV" /><span>OpenCV</span></div>
+          <div className="tech-icon-label"><FaGitAlt title="Git" /><span>Git</span></div>
+          <div className="tech-icon-label"><SiJupyter title="Jupyter" /><span>Jupyter</span></div>
         </div>
       </section>
       <hr className="section-divider" />
