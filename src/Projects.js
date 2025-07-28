@@ -19,8 +19,8 @@ const projects = [
     title: 'Sentiment Analysis with Twitter Integration',
     description: 'Production-ready sentiment analysis system achieving 100% accuracy with real-time Twitter integration, REST API endpoints, and comprehensive error handling.',
     tech: ['Python', 'Flask', 'scikit-learn', 'TF-IDF', 'Logistic Regression', 'Twitter API', 'Docker', 'Heroku'],
-    github: 'sentiment-analyzer',
-    demo: '#', // TODO: Add live demo URL after deployment
+    github: 'budget-buddy',
+    demo: 'http://localhost:5000',
     icon: <FaBrain />,
     metrics: ['100% Accuracy', '97.6% CV Score', 'Live Demo'],
     features: [
@@ -35,8 +35,8 @@ const projects = [
     title: 'Plant Disease Classification System',
     description: 'Computer vision system using transfer learning with MobileNetV2/ResNet50 for agricultural disease detection with realistic synthetic datasets.',
     tech: ['Python', 'TensorFlow', 'Transfer Learning', 'MobileNetV2', 'OpenCV', 'Streamlit'],
-    github: 'plant-classifier',
-    demo: '#', // TODO: Add live demo URL after deployment
+    github: 'budget-buddy',
+    demo: 'http://localhost:8501',
     icon: <FaSeedling />,
     metrics: ['Transfer Learning', '400+ Images', 'Real-time'],
     features: [
@@ -51,8 +51,8 @@ const projects = [
     title: 'ML-Powered Internship Recommendation System',
     description: 'Intelligent job matching system using ML algorithms for personalized internship recommendations with clustering and topic modeling.',
     tech: ['Python', 'Flask', 'scikit-learn', 'K-means', 'LDA', 'Cosine Similarity', 'Heroku'],
-    github: 'internship-finder',
-    demo: '#', // TODO: Add live demo URL after deployment
+    github: 'budget-buddy',
+    demo: 'http://localhost:5001',
     icon: <FaSearch />,
     metrics: ['Clustering', 'Topic Modeling', 'Personalized'],
     features: [
@@ -67,8 +67,8 @@ const projects = [
     title: 'ML Interview Preparation Platform',
     description: 'Comprehensive ML interview preparation platform with progress tracking, personalized recommendations, and mock interview simulations.',
     tech: ['Python', 'Streamlit', 'Pandas', 'Plotly', 'NLP', 'Analytics'],
-    github: 'interview-prep',
-    demo: '#', // TODO: Add live demo URL after deployment
+    github: 'budget-buddy',
+    demo: 'http://localhost:8502',
     icon: <FaGraduationCap />,
     metrics: ['500+ Questions', 'Progress Tracking', 'Mock Interviews'],
     features: [
@@ -110,8 +110,8 @@ const ProjectCard = ({ title, description, tech, github, demo, githubUrl, icon, 
       <a href={`${githubUrl}/${github}`} target="_blank" rel="noopener noreferrer" className="github-link">
         <FaGithub /> View Code
       </a>
-      <a href={demo} target="_blank" rel="noopener noreferrer" className={demo === '#' ? "demo-link disabled" : "demo-link"}>
-        <FaExternalLinkAlt /> {demo === '#' ? "Demo Coming Soon" : "Live Demo"}
+      <a href={demo} target="_blank" rel="noopener noreferrer" className="demo-link">
+        <FaExternalLinkAlt /> Live Demo
       </a>
     </div>
   </div>
