@@ -20,7 +20,7 @@ const projects = [
     description: 'Production-ready sentiment analysis system achieving 100% accuracy with real-time Twitter integration, REST API endpoints, and comprehensive error handling.',
     tech: ['Python', 'Flask', 'scikit-learn', 'TF-IDF', 'Logistic Regression', 'Twitter API', 'Docker', 'Heroku'],
     github: 'budget-buddy',
-    demo: 'http://localhost:5000',
+    demo: 'http://localhost:5002',
     icon: <FaBrain />,
     metrics: ['100% Accuracy', '97.6% CV Score', 'Live Demo'],
     features: [
