@@ -78,15 +78,15 @@ const Resume = () => (
         </ul>
       </li>
       <li>
-        <strong>ML-Powered Internship Recommendation System</strong><br />
-        Intelligent job matching system using ML algorithms for personalized internship recommendations with clustering and topic modeling.<br />
-        <em>Tech Stack:</em> Python, Flask, scikit-learn, K-means, LDA, Cosine Similarity, Heroku<br />
-        <em>Key Achievements:</em> Clustering algorithms, Topic modeling, Skill extraction, Personalized recommendations<br />
+        <strong>Real-Time Internship Web Scraper</strong><br />
+        Advanced web scraping system that searches multiple job boards (LinkedIn, Indeed, Glassdoor) in real-time to find the latest internship opportunities with intelligent filtering.<br />
+        <em>Tech Stack:</em> Python, Flask, BeautifulSoup, Requests, Web Scraping, Real-time Search, Multi-source<br />
+        <em>Key Achievements:</em> Real-time search, Multi-source scraping, Live results, Professional UI<br />
         <ul>
-          <li>Implemented K-means clustering for job categorization and Latent Dirichlet Allocation for topic modeling</li>
-          <li>Developed automatic skill extraction from job descriptions using NLP techniques</li>
-          <li>Built personalized recommendation scoring with weighted algorithms</li>
-          <li>Created comprehensive job market insights and trends analysis</li>
+          <li>Implemented real-time web scraping from LinkedIn, Indeed, and Glassdoor job boards</li>
+          <li>Developed intelligent keyword and location filtering with pre-defined categories</li>
+          <li>Built live search results with direct apply links and professional job cards</li>
+          <li>Created multi-source aggregation and deduplication for comprehensive results</li>
         </ul>
       </li>
       <li>
