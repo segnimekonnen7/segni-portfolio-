@@ -48,19 +48,19 @@ const projects = [
     ]
   },
   {
-    title: 'ML-Powered Internship Recommendation System',
-    description: 'Intelligent job matching system using ML algorithms for personalized internship recommendations with clustering and topic modeling.',
-    tech: ['Python', 'Flask', 'scikit-learn', 'K-means', 'LDA', 'Cosine Similarity', 'Heroku'],
+    title: 'Real-Time Internship Web Scraper',
+    description: 'Advanced web scraping system that searches multiple job boards (LinkedIn, Indeed, Glassdoor) in real-time to find the latest internship opportunities with intelligent filtering.',
+    tech: ['Python', 'Flask', 'BeautifulSoup', 'Requests', 'Web Scraping', 'Real-time Search', 'Multi-source'],
     github: 'budget-buddy',
-    demo: 'http://localhost:5001',
+    demo: 'http://localhost:5005',
     icon: <FaSearch />,
-    metrics: ['Clustering', 'Topic Modeling', 'Personalized'],
+    metrics: ['Real-time Search', 'Multi-source', 'Live Results'],
     features: [
-      '✅ K-means clustering for job categorization',
-      '✅ LDA topic modeling for content analysis',
-      '✅ Automatic skill extraction from job descriptions',
-      '✅ Personalized recommendation scoring',
-      '✅ Market insights and trends analysis'
+      '✅ Real-time web scraping from LinkedIn, Indeed, Glassdoor',
+      '✅ Intelligent keyword and location filtering',
+      '✅ Live search results with direct apply links',
+      '✅ Professional UI with job cards and details',
+      '✅ Multi-source aggregation and deduplication'
     ]
   },
   {
