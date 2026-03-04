@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/segni-portfolio-/static/css/main.58860b0a.css",
-    "main.js": "/segni-portfolio-/static/js/main.adc014b4.js",
+    "main.js": "/segni-portfolio-/static/js/main.e231b5de.js",
     "static/js/453.3178dc8c.chunk.js": "/segni-portfolio-/static/js/453.3178dc8c.chunk.js",
     "index.html": "/segni-portfolio-/index.html",
     "main.58860b0a.css.map": "/segni-portfolio-/static/css/main.58860b0a.css.map",
-    "main.adc014b4.js.map": "/segni-portfolio-/static/js/main.adc014b4.js.map",
+    "main.e231b5de.js.map": "/segni-portfolio-/static/js/main.e231b5de.js.map",
     "453.3178dc8c.chunk.js.map": "/segni-portfolio-/static/js/453.3178dc8c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.58860b0a.css",
-    "static/js/main.adc014b4.js"
+    "static/js/main.e231b5de.js"
   ]
 }
