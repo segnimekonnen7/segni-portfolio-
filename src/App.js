@@ -26,15 +26,15 @@ function App() {
         </ul>
       </nav>
       <section id="hero" className="hero-section section">
-        <h1 className="hero-title">Machine Learning Engineer</h1>
-        <p className="hero-tagline">Building production-ready ML applications with 100% accuracy | Transfer Learning | Computer Vision | NLP | Deployment</p>
+        <h1 className="hero-title">Backend Software Engineer</h1>
+        <p className="hero-tagline">Python · FastAPI · PostgreSQL · Docker | Building scalable APIs and full-stack applications</p>
       </section>
       <hr className="section-divider" />
       <section id="about" className="section">
         <h2>About</h2>
-        <p>I'm a junior Computer Information Technology student at Minnesota State University, Mankato, with a focus on backend development and applied machine learning. I'm currently completing the Andrew Ng Machine Learning Specialization and building AI-powered tools such as an internship finder and interview assistant. I’m seeking a machine learning internship where I can apply my technical skills, creativity, and passion for real-world problem-solving.</p>
+        <p>Computer Science student with a Mathematics minor at Minnesota State University, Mankato. I build scalable backend systems and full-stack applications with Python, FastAPI, and React. I have open-source experience with the Django Software Foundation and have led ML research teams. I'm seeking backend engineering internships where I can apply my skills in APIs, databases, and deployment.</p>
         <div className="learning-now">
-          <span role="img" aria-label="books">🚀</span> Currently focused on production deployment and advanced ML techniques.
+          <span role="img" aria-label="books">🚀</span> Focused on production systems, REST APIs, and ML integration.
         </div>
       </section>
       <hr className="section-divider" />
@@ -58,7 +58,6 @@ function App() {
       <hr className="section-divider" />
       <section id="resume" className="section">
         <Resume />
-        <a href="/resume.pdf" download className="resume-button">Download Resume</a>
       </section>
       <hr className="section-divider" />
       <section id="projects" className="section">
@@ -72,7 +71,7 @@ function App() {
           <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="contact-icon linkedin"><FaLinkedin /></a>
           <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="contact-icon github"><FaGithub /></a>
         </div>
-        <p>Email: segnimekonnen7@gmail.com</p>
+        <p>(571) 502-1555 · segnimekonnen7@gmail.com</p>
       </section>
     </div>
   );

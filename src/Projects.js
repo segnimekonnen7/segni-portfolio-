@@ -1,82 +1,60 @@
 import React from 'react';
-import { FaGithub, FaPython, FaBrain, FaSeedling, FaSearch, FaGraduationCap, FaExternalLinkAlt } from 'react-icons/fa';
-import { SiFlask, SiSpacy, SiStreamlit, SiTensorflow, SiScikitlearn, SiDocker, SiHeroku } from 'react-icons/si';
+import { FaGithub, FaPython, FaBriefcase, FaHospital, FaSync, FaExternalLinkAlt } from 'react-icons/fa';
+import { SiDocker, SiScikitlearn } from 'react-icons/si';
 
 const techBadges = {
   Python: <FaPython title="Python" />,
-  Flask: <SiFlask title="Flask" />,
-  spaCy: <SiSpacy title="spaCy" />,
-  Streamlit: <SiStreamlit title="Streamlit" />,
-  TensorFlow: <SiTensorflow title="TensorFlow" />,
-  'scikit-learn': <SiScikitlearn title="scikit-learn" />,
   Docker: <SiDocker title="Docker" />,
-  Heroku: <SiHeroku title="Heroku" />,
-  // For other tech, just use the text label
+  'scikit-learn': <SiScikitlearn title="scikit-learn" />,
 };
 
 const projects = [
   {
-    title: 'Sentiment Analysis with Twitter Integration',
-    description: 'Production-ready sentiment analysis system achieving 100% accuracy with real-time Twitter integration, REST API endpoints, and comprehensive error handling.',
-    tech: ['Python', 'Flask', 'scikit-learn', 'TF-IDF', 'Logistic Regression', 'Twitter API', 'Docker', 'Heroku'],
-    github: 'budget-buddy',
-    demo: 'http://localhost:5002',
-    icon: <FaBrain />,
-    metrics: ['100% Accuracy', '97.6% CV Score', 'Live Demo'],
+    title: 'CareerTrack',
+    description: 'Full-stack job application tracker with spaCy NLP to extract skills from resumes and job descriptions, scoring match quality. Celery + Redis workers for follow-up reminders and analytics; 5 services orchestrated with Docker Compose.',
+    tech: ['FastAPI', 'PostgreSQL', 'Redis', 'Docker', 'spaCy', 'Python'],
+    github: 'habit-loop',
+    demo: 'https://segnimekonnen7.github.io/segni-portfolio-/habit-loop-demo/index.html',
+    icon: <FaBriefcase />,
+    metrics: ['Feb 2026', 'Celery', 'pytest'],
     features: [
-      '✅ 100% accuracy with robust cross-validation',
-      '✅ Real-time Twitter sentiment analysis',
-      '✅ REST API with batch processing',
-      '✅ Advanced TF-IDF vectorization',
-      '✅ Production deployment on Heroku'
+      '✅ spaCy NLP for skills extraction',
+      '✅ Weighted match scoring (required & preferred skills)',
+      '✅ Celery + Redis background workers',
+      '✅ Docker Compose (5 services)',
+      '✅ pytest coverage for auth and match scoring'
     ]
   },
   {
-    title: 'Plant Disease Classification System',
-    description: 'Computer vision system using transfer learning with MobileNetV2/ResNet50 for agricultural disease detection with realistic synthetic datasets.',
-    tech: ['Python', 'TensorFlow', 'Transfer Learning', 'MobileNetV2', 'OpenCV', 'Streamlit'],
-    github: 'budget-buddy',
-    demo: 'http://localhost:8501',
-    icon: <FaSeedling />,
-    metrics: ['Transfer Learning', '400+ Images', 'Real-time'],
+    title: 'EthioClinic',
+    description: 'Healthcare queue and scheduling system with REST APIs for patient registration, appointment scheduling, and real-time clinic queue tracking. Redis-backed queue management, JWT auth, and role-based access control.',
+    tech: ['FastAPI', 'PostgreSQL', 'Redis', 'Docker', 'Python'],
+    github: 'habit-loop',
+    demo: 'https://segnimekonnen7.github.io/segni-portfolio-/',
+    icon: <FaHospital />,
+    metrics: ['Aug 2025', 'REST APIs', 'RBAC'],
     features: [
-      '✅ Transfer Learning with MobileNetV2/ResNet50',
-      '✅ Realistic synthetic dataset generation',
-      '✅ Advanced data augmentation techniques',
-      '✅ Real-time image classification',
-      '✅ Production deployment on Streamlit Cloud'
+      '✅ Patient registration & appointment scheduling',
+      '✅ Real-time clinic queue tracking',
+      '✅ Redis-backed queue management',
+      '✅ JWT auth & role-based access control',
+      '✅ Containerized with Docker'
     ]
   },
   {
-    title: 'Real-Time Internship Web Scraper',
-    description: 'Advanced web scraping system that searches multiple job boards (LinkedIn, Indeed, Glassdoor) in real-time to find the latest internship opportunities with intelligent filtering.',
-    tech: ['Python', 'Flask', 'BeautifulSoup', 'Requests', 'Web Scraping', 'Real-time Search', 'Multi-source'],
-    github: 'budget-buddy',
-    demo: 'http://localhost:5005',
-    icon: <FaSearch />,
-    metrics: ['Real-time Search', 'Multi-source', 'Live Results'],
+    title: 'Habit Loop',
+    description: 'Full-stack habit tracking app (FastAPI + Next.js/TypeScript) with check-in, count, and duration goal types; configurable schedules and streak grace logic. ML backend: RandomForestClassifier (~96% accuracy) for success prediction and reminder recommendations.',
+    tech: ['FastAPI', 'Next.js', 'PostgreSQL', 'scikit-learn', 'Docker', 'Python'],
+    github: 'habit-loop',
+    demo: 'https://segnimekonnen7.github.io/segni-portfolio-/habit-loop-demo/index.html',
+    icon: <FaSync />,
+    metrics: ['June 2025', '~96% accuracy', 'Render'],
     features: [
-      '✅ Real-time web scraping from LinkedIn, Indeed, Glassdoor',
-      '✅ Intelligent keyword and location filtering',
-      '✅ Live search results with direct apply links',
-      '✅ Professional UI with job cards and details',
-      '✅ Multi-source aggregation and deduplication'
-    ]
-  },
-  {
-    title: 'ML Interview Preparation Platform',
-    description: 'Comprehensive ML interview preparation platform with progress tracking, personalized recommendations, and mock interview simulations.',
-    tech: ['Python', 'Streamlit', 'Pandas', 'Plotly', 'NLP', 'Analytics'],
-    github: 'budget-buddy',
-    demo: 'http://localhost:8502',
-    icon: <FaGraduationCap />,
-    metrics: ['500+ Questions', 'Progress Tracking', 'Mock Interviews'],
-    features: [
-      '✅ 500+ ML interview questions',
-      '✅ Progress tracking and analytics',
-      '✅ Mock interview simulations',
-      '✅ Personalized study recommendations',
-      '✅ Performance analytics dashboard'
+      '✅ Check-in, count, and duration goal types',
+      '✅ Configurable schedules & streak grace logic',
+      '✅ RandomForestClassifier on 6 behavioral features',
+      '✅ ~30% API response time improvement',
+      '✅ Deployed on Render via Docker'
     ]
   },
 ];
@@ -119,7 +97,7 @@ const ProjectCard = ({ title, description, tech, github, demo, githubUrl, icon, 
 
 const Projects = ({ githubUrl }) => (
   <div className="projects-grid">
-    <h2>🚀 Production-Ready ML Projects</h2>
+    <h2>Projects</h2>
     <div className="projects-flex">
       {projects.map((p) => (
         <ProjectCard key={p.title} {...p} githubUrl={githubUrl} />
@@ -128,4 +106,4 @@ const Projects = ({ githubUrl }) => (
   </div>
 );
 
-export default Projects; 
+export default Projects;

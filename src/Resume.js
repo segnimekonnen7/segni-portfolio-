@@ -2,107 +2,75 @@ import React from 'react';
 
 const Resume = () => (
   <div className="resume">
-    <h2>Resume</h2>
-    <h3>Education</h3>
-    <ul>
-      <li>
-        <strong>B.S. in Computer Information Technology, Minor in Mathematics</strong><br />
-        Minnesota State University, Mankato<br />
-        Expected Graduation: 2026<br />
-        <strong>Dean's List</strong><br />
-        <em>Relevant Coursework: Machine Learning, Data Structures, Algorithms, Calculus, Linear Algebra, Probability, Statistics</em>
-      </li>
-      <li>
-        <strong>Andrew Ng's Machine Learning Specialization</strong><br />
-        (In Progress)
-      </li>
-      <li>
-        <strong>Machine Learning</strong> (Harvard, no date provided)
-      </li>
-    </ul>
-    <h3>Technical Skills & Accomplishments</h3>
-    <ul>
-      <li><strong>Machine Learning & AI:</strong> Logistic Regression, Random Forest, K-means Clustering, Latent Dirichlet Allocation, Transfer Learning, Convolutional Neural Networks, TF-IDF Vectorization, Sentiment Analysis, Topic Modeling</li>
-      <li><strong>Deep Learning:</strong> TensorFlow, Keras, PyTorch, MobileNetV2, ResNet50, EfficientNet, Data Augmentation, Model Optimization</li>
-      <li><strong>Programming & Tools:</strong> Python, NumPy, pandas, scikit-learn, SQL, Git, Jupyter, Flask, Streamlit, Docker, OpenCV, Plotly</li>
-      <li><strong>Deployment & DevOps:</strong> Heroku, Streamlit Cloud, REST APIs, Production Deployment, Error Handling, Monitoring</li>
-      <li><strong>Data Science:</strong> Data Preprocessing, Feature Engineering, Model Evaluation, Cross-validation, Statistical Analysis</li>
-      <li><strong>Achievements:</strong> 100% accuracy in sentiment analysis, 4 production-ready ML applications, Real-time API integration, Advanced ML algorithms implementation</li>
-    </ul>
-    <h3>Work Experience</h3>
-    <ul>
-      <li>
-        <strong>Open Source Contributor – Omdena</strong><br />
-        Remote · Jan 2025 – Mar 2025<br />
-        Contributed to a global AI-for-good project with Omdena focused on natural language processing to improve access to education in underserved communities. Collaborated with a team of data scientists and engineers to preprocess text data, tune models, and deliver insights using Python and scikit-learn. Actively participated in sprint reviews, Git-based collaboration, and team discussions.<br />
-        <em>Tech Used:</em> Python, NLP, scikit-learn, Git, Jupyter, Google Colab, GitHub
-      </li>
-    </ul>
-    <h3>Leadership & Extracurricular Activities</h3>
-    <ul>
-      <li>
-        <strong>Boy Scout Leader | Boy Scouts of Ethiopia</strong><br />
-        2015–2018<br />
-        <ul>
-          <li>Selected to represent Ethiopia at the 2017 World Scout Jamboree, collaborating with scouts from 100+ countries and developing advanced cross-cultural communication skills.</li>
-          <li>Led and mentored teams of scouts during national events and community service projects, fostering teamwork, accountability, and a results-driven mindset.</li>
-          <li>Organized and executed team-building exercises and outdoor activities, strengthening group collaboration and trust.</li>
-          <li>Demonstrated resilience and adaptability by managing diverse groups in dynamic environments, from large-scale camps to local community initiatives.</li>
-        </ul>
-      </li>
-    </ul>
-    <h3>Machine Learning Projects</h3>
-    <ul>
-      <li>
-        <strong>Sentiment Analysis with Twitter Integration</strong><br />
-        Production-ready sentiment analysis system achieving 100% accuracy with real-time Twitter integration, REST API endpoints, and comprehensive error handling.<br />
-        <em>Tech Stack:</em> Python, Flask, scikit-learn, TF-IDF, Logistic Regression, Twitter API, Docker, Heroku<br />
-        <em>Key Achievements:</em> 100% accuracy on test data, 97.6% cross-validation score, Real-time API integration, Production deployment<br />
-        <ul>
-          <li>Implemented advanced text preprocessing with URL removal, user mention handling, and hashtag processing</li>
-          <li>Built REST API with batch processing capabilities and comprehensive error handling</li>
-          <li>Deployed on Heroku with Docker containerization for production scalability</li>
-          <li>Integrated Twitter API for real-time social media sentiment analysis</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Plant Disease Classification System</strong><br />
-        Computer vision system using transfer learning with MobileNetV2/ResNet50 for agricultural disease detection with realistic synthetic datasets.<br />
-        <em>Tech Stack:</em> Python, TensorFlow, Keras, Transfer Learning, MobileNetV2, OpenCV, Streamlit<br />
-        <em>Key Achievements:</em> Transfer learning implementation, 400+ realistic synthetic images, Real-time classification, Production deployment<br />
-        <ul>
-          <li>Implemented transfer learning with multiple base models (MobileNetV2, ResNet50, EfficientNet)</li>
-          <li>Created realistic synthetic dataset generation for plant disease images</li>
-          <li>Applied advanced data augmentation techniques for model robustness</li>
-          <li>Deployed on Streamlit Cloud with real-time image classification capabilities</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Real-Time Internship Web Scraper</strong><br />
-        Advanced web scraping system that searches multiple job boards (LinkedIn, Indeed, Glassdoor) in real-time to find the latest internship opportunities with intelligent filtering.<br />
-        <em>Tech Stack:</em> Python, Flask, BeautifulSoup, Requests, Web Scraping, Real-time Search, Multi-source<br />
-        <em>Key Achievements:</em> Real-time search, Multi-source scraping, Live results, Professional UI<br />
-        <ul>
-          <li>Implemented real-time web scraping from LinkedIn, Indeed, and Glassdoor job boards</li>
-          <li>Developed intelligent keyword and location filtering with pre-defined categories</li>
-          <li>Built live search results with direct apply links and professional job cards</li>
-          <li>Created multi-source aggregation and deduplication for comprehensive results</li>
-        </ul>
-      </li>
-      <li>
-        <strong>ML Interview Preparation Platform</strong><br />
-        Comprehensive ML interview preparation platform with progress tracking, personalized recommendations, and mock interview simulations.<br />
-        <em>Tech Stack:</em> Python, Streamlit, Pandas, Plotly, NLP, Analytics<br />
-        <em>Key Achievements:</em> 500+ questions, Progress tracking, Mock interviews, Performance analytics<br />
-        <ul>
-          <li>Developed comprehensive question bank with 500+ ML interview questions</li>
-          <li>Implemented progress tracking and analytics dashboard with Plotly visualizations</li>
-          <li>Created mock interview simulations with performance evaluation</li>
-          <li>Built personalized study recommendations based on user performance</li>
-        </ul>
-      </li>
-    </ul>
+    <div className="resume-header">
+      <h2>Resume</h2>
+      <a
+        href={`${process.env.PUBLIC_URL || ''}/resume.pdf`}
+        download
+        className="resume-button"
+      >
+        Download PDF
+      </a>
+    </div>
+
+    <section className="resume-block">
+      <h3>Experience</h3>
+      <div className="experience-list">
+        <div className="experience-item">
+          <div className="experience-header">
+            <strong>Django Software Foundation — Open Source Software Developer</strong>
+            <span className="experience-meta">Remote · Jun. 2024 – Oct. 2024</span>
+          </div>
+          <ul>
+            <li>Fixed a template parsing bug (PR #19944) in Django's core — invalid numeric literals now raise TemplateSyntaxError at parse time; validated against 1,500+ unit tests.</li>
+            <li>Improved Django ORM docs (PR #36657) with a how-to for custom Func, Lookup, and Transform; cross-linked reference and how-to pages for better discoverability.</li>
+          </ul>
+        </div>
+        <div className="experience-item">
+          <div className="experience-header">
+            <strong>Minnesota State University — Machine Learning Research Assistant</strong>
+            <span className="experience-meta">Mankato, MN · Oct. 2025 – Present</span>
+          </div>
+          <ul>
+            <li>Led a 4-person team to build a Python-based AutoML system for insurance prediction, reducing manual modeling time by ~45%.</li>
+            <li>Engineered preprocessing and model comparison pipelines with pandas and scikit-learn; evaluated 4 ML algorithms with ~8% accuracy improvement over baseline.</li>
+            <li>Containerized workflows with Docker, cutting environment setup time by ~40%.</li>
+          </ul>
+        </div>
+        <div className="experience-item">
+          <div className="experience-header">
+            <strong>Outamation — Software Engineering Extern</strong>
+            <span className="experience-meta">Remote · Dec 2025 – Jan 2026</span>
+          </div>
+          <ul>
+            <li>Processed 500+ mortgage document blobs using Python-based OCR workflows, achieving ~92% extraction accuracy across multiple formats.</li>
+            <li>Implemented parsing and validation for 20+ extracted fields (~95% accuracy), reducing backend processing errors by ~35%.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section className="resume-block">
+      <h3>Technical Skills</h3>
+      <div className="skills-grid">
+        <div className="skill-row"><strong>Languages:</strong> Python, JavaScript, SQL (PostgreSQL)</div>
+        <div className="skill-row"><strong>Backend:</strong> FastAPI, REST APIs, SQLAlchemy, Docker, Redis, WebSockets</div>
+        <div className="skill-row"><strong>Frontend:</strong> React</div>
+        <div className="skill-row"><strong>Tools:</strong> Git, GitHub, Linux, Render</div>
+        <div className="skill-row"><strong>Libraries:</strong> pandas, NumPy, scikit-learn</div>
+      </div>
+    </section>
+
+    <section className="resume-block">
+      <h3>Education</h3>
+      <div className="education-item">
+        <strong>Bachelor of Science in Computer Science, Minor in Mathematics</strong>
+        <div className="education-meta">Minnesota State University, Mankato · Expected Dec. 2026</div>
+        <p className="education-details">Dean's List · Dean's Scholarship Recipient</p>
+        <em>Data Structures & Algorithms, Database Systems, Machine Learning, Linear Algebra, Web Development, Cloud Computing</em>
+      </div>
+    </section>
   </div>
 );
 
-export default Resume; 
+export default Resume;
